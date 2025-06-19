@@ -8,6 +8,7 @@ To push your build to the Github docker registry: `docker push ghcr.io/cepro/pos
 
 Before pushing you will need to login to the Github docker registry with: `docker login --username <GITHUB_USERNAME> ghcr.io` . You will need to use a personal access token as the password - see here for instructions: https://medium.com/devopsturkiye/pushing-docker-images-to-githubs-registry-manual-and-automated-methods-19cce3544eb1
 
+NOTE: may need to create a 'classic' token and specifically give write:packages and read:packages permissions. In my case the 'fine grained token' didn't have any selectable permissions for packages.
 
 ---
 ---
